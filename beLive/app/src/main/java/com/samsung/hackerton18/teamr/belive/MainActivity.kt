@@ -5,6 +5,7 @@ import android.arch.lifecycle.Observer
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.design.widget.Snackbar
@@ -141,8 +142,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
         nav_create_contract.setOnClickListener {
-            showNewContractFragment()
-            drawer_layout.closeDrawer(GravityCompat.START)
+            val intent1 = Intent(this@MainActivity, createContractActivity::class.java)
+            //intent1.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            //intent1.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+            startActivity(intent1)
+            //showNewContractFragment()
+            //drawer_layout.closeDrawer(GravityCompat.START)
         }
 
         nav_history.setOnClickListener {
