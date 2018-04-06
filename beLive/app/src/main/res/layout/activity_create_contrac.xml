@@ -135,31 +135,114 @@
                         android:textAllCaps="false"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#34E2AE"
-                        android:text="Skip"/>
+                        android:background="#ffffff"
+                        android:text="skip"/>
                     <Button
                         android:id="@+id/date_button"
                         android:textAllCaps="false"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#34E2AE"
-                        android:text="Date"/>
+                        android:text="date"/>
                     <Button
                         android:id="@+id/time_button"
                         android:textAllCaps="false"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#34E2AE"
-                        android:text="Time"/>
+                        android:text="time"/>
                     <Button
                         android:id="@+id/location_button"
                         android:textAllCaps="false"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#34E2AE"
-                        android:text="Location"/>
+                        android:text="location"/>
                 </LinearLayout>
-
+                <LinearLayout
+                android:id="@+id/date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+                <Button
+                    android:id="@+id/cancel_date_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="cancel"/>
+                <Button
+                    android:id="@+id/every_month_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34E2AE"
+                    android:text="every month till..."/>
+                <Button
+                    android:id="@+id/specific_date_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34E2AE"
+                    android:text="specific date"/>
+                </LinearLayout>
+                <LinearLayout
+                android:id="@+id/to_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible">
+                <Button
+                    android:id="@+id/to_add_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="add"/>
+                <Button
+                    android:id="@+id/to_mother_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34E2AE"
+                    android:text="mother"/>
+                <Button
+                    android:id="@+id/to_young_jae_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34E2AE"
+                    android:text="yong jae"/>
+                <Button
+                    android:id="@+id/to_kyung_up_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34E2AE"
+                    android:text="kyung up"/>
+                <Button
+                    android:id="@+id/to_kyung_tae_button"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#34E2AE"
+                    android:text="kyung tae"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/done_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+                    <Button
+                        android:id="@+id/done_button"
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#34E2AE"
+                        android:text="done"/>
+                </LinearLayout>
             </FrameLayout>
 
         </LinearLayout>
